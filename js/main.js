@@ -30,12 +30,12 @@ sideIcon.on('click',function(){
     if(flag == false){
         let sideNavBarWidth = sideNavBar.outerWidth();
         sideNavBar.css('left','0');
-        sideIcon.css('left',`${sideNavBarWidth+15}px`);
+        sideIcon.css('left',`${sideNavBarWidth+10}px`);
         homeContent.css('marginLeft',`${sideNavBarWidth+15}px`);
         flag = true;
     }else{
         let sideNavBarWidth = sideNavBar.outerWidth();
-        sideNavBar.css('left',`-${sideNavBarWidth}px`);
+        sideNavBar.css('left',`-${sideNavBarWidth}%`);
         sideIcon.css('left','10px');
         homeContent.css('marginLeft',`0`);
         flag = false;
@@ -46,7 +46,7 @@ sideIcon.on('click',function(){
 //hide navbar
 closeNavbar.on('click',function(){
     let sideNavBarWidth = sideNavBar.outerWidth();
-    sideNavBar.css('left',`-${sideNavBarWidth}px`);
+    sideNavBar.css('left',`-${sideNavBarWidth}%`);
     sideIcon.css('left','10px');
     homeContent.css('marginLeft',`0`);
     flag = false;

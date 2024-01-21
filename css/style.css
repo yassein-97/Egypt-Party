@@ -34,7 +34,7 @@ body {
     top: 0;
     left: 0px; 
     height: 100%;
-     height: 100vh;
+    height: 100vh;
     width: 25%;
 }
 
@@ -50,13 +50,13 @@ body {
 
 }
 .side-nav-links li {
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 .side-nav-links li a{
-    font-size: 25px;
-    line-height: 37.5px;
+    font-size: 1.5625rem;
+    line-height: 2.3438rem;
     color:#FFFFFF;
-    padding: 20px 8px 20px 32px;
+    padding: 1.25rem .5rem 1.25rem 2rem;
     transition: all 0.3s;
 }
 .side-nav-links li a:hover{
@@ -72,8 +72,8 @@ body {
 }
 .side-navbar-icon{
     width: 25%;
-    align-self: center;
-    left: 10px;
+    top: 21.875rem;
+    left: .625rem;
     z-index: 99999;
     transition: all 0.3s;
 }
@@ -81,7 +81,7 @@ body {
 /*home*/
 .home{
     width: 100%;
-    min-height: 95vh;
+    height: 95vh;
     background-image: 
     linear-gradient(to bottom , rgba(214, 46, 51 , 0.6), rgba(214, 46, 51 , 0.6)),
     url('../images/events-heavenly-header.jpg');
@@ -91,23 +91,24 @@ body {
     transition: all 0.3s;
 }
 .home h2{
-    font-size: 60px;
-    line-height: 72px;
+    font-size: 3.75rem;
+    line-height: 4.5rem;
     font-weight: 500;
 }
 .home p{
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 /*duration*/
 .duration{
-    min-height: 700px;
+    max-height: 700px;
+    padding: 40px;
 
 }
 .singer-header{
-    font-size: 28px;
-    line-height: 33.6px;
+    font-size: 1.75rem;
+    line-height: 2.1rem;
     font-weight: 500;
     color:#FFFFFF;
     background-color: #E68285;
@@ -116,7 +117,7 @@ body {
     cursor: pointer;
 }
 .singer-card{
-    padding: 10px;
+    padding: .625rem;
     background-color: #ccc;
     display: none ;
 }
@@ -134,30 +135,31 @@ div.singer-card.active{
 }
 
 .timer-card{
-    height: 200px;
+    height: 12.5rem;
 }
 
 .timer-card p{
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 1.875rem;
+    line-height: 2.8125rem;
     font-weight: 500;
     color: #FFFFFF;
 }
 
 /*contact*/
 .contact{
-    min-height: 100vh;
+    max-height: 100vh;
+    padding: 3.125rem;
 }
 .contact h2{
-    font-size: 35px;
-    line-height: 42px;
+    font-size: 2.1875rem;
+    line-height: 2.625rem;
     font-weight: 700;
     color: #444444;
     
 }
 .icon-layer{
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border: 1px solid #777;
     color: #777;
     transition: all 0.3s;
@@ -168,4 +170,25 @@ div.singer-card.active{
     background-color: #D62E33;
     border: 1px solid #D62E33;
     color: #FFFFFF;
+}
+@media screen and (max-width:560px){
+    html{
+        font-size: 5px;
+    }
+    .home{
+        height: 40vh;
+    }
+    .home h2{
+        font-size: 35px;
+    }
+    .home p{
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .side-navbar{
+        width: 20%;
+    }
+    .side-navbar-icon{
+        left: 0px;
+    }
 }

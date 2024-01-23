@@ -106,6 +106,9 @@ body {
     padding: 40px;
 
 }
+.singer-container{
+    width: 50%;
+}
 .singer-header{
     font-size: 1.75rem;
     line-height: 2.1rem;
@@ -171,7 +174,17 @@ div.singer-card.active{
     border: 1px solid #D62E33;
     color: #FFFFFF;
 }
-@media screen and (max-width:560px){
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .duration{
+        max-height: 900px;
+    }
+    .singer-container{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:767px){
     html{
         font-size: 5px;
     }

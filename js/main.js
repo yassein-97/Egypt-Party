@@ -54,9 +54,10 @@ closeNavbar.on('click',function(){
 
 //animation on singer card
 singerHeader.on('click',function(){
-    $(this).siblings('h3').next().css({'display':'none'})
+    // $(this).siblings('h3').next().css({'display':'none'});
+    $(this).siblings('h3').next().slideUp(700);
     let nextDiv = $(this).next();
-    nextDiv.slideToggle(500);
+    nextDiv.slideToggle(700);
 });
 
 // function to count down the time for the event
@@ -85,6 +86,7 @@ message.on('keyup',function(){
     }
     else{
         charCounter.html(`your available character finished`);
+        message.attr('disabled','disabled')
     }
 });
 

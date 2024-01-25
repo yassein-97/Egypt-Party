@@ -123,6 +123,7 @@ body {
     padding: .625rem;
     background-color: #ccc;
     display: none ;
+    /* transition: 0.3s; */
 }
 div.singer-card.active{
     display: block ;
